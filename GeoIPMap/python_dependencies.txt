@@ -1,0 +1,7 @@
+#SETUP ENVIROMENT
+  python -m venv GeoIPMap/
+  pip install django_bootstrap5
+  pip install django_countries
+  pip install python-mysqldb
+  pip install mysqlclient
+  pip install requests

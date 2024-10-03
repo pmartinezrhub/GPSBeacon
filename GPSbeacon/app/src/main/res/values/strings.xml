@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GPSbeacon</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">GPS Beacon</string>
+    <string name="second_fragment_label">Sending S.O.S</string>
+    <string name="next">S.O.S</string>
+    <string name="previous">STOP S.O.S</string>
+
+    <string name="hello_first_fragment">Use only for emergency</string>
+</resources>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        {# Load the tag library #}
+        {% load django_bootstrap5 %}
+        {# Load CSS and JavaScript #}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+        {# Display django.contrib.messages as Bootstrap alerts #}
+        {% bootstrap_messages %}
+        {% load countries %}
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                    <span class="fs-4">Bienvenido</span>
+                </a>
+                <!--<ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#example" class="nav-link active" aria-current="page">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"></a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Acerca de</a></li> 
+                    </ul>-->
+            </header>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <h1 class="h1">Atención</h1>
+                <h2 class="h2">Todos los datos que aquí figuran podrán ser recuperados en caso de ciberataques</h2>
+                <p>IP: {{query}}</p>
+                <p>País: {{country}} -  {{countryCode}}</p>
+                <img src="{{flag}}" width="50px">
+                <p>Región {{region}}  {{regionName}} </p>
+                <p> Ciudad {{city}} ZIP {{zip}} </p>
+                <p> Latitud {{lat}} Longitud {{lon}}</p>
+                <p> {{timezone}} </p>
+                <p>IPS {{isp}} {{org}} </p>
+                <!--<button>Aceptar</button>-->
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <EditText
+        android:id="@+id/server_url"
+        android:layout_width="355dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="151dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="http://pmartinezr.h4ck.me:8088"
+        app:layout_constraintBottom_toTopOf="@+id/advise_sos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/advise_sos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/hello_first_fragment"
+        app:layout_constraintBottom_toTopOf="@+id/button_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_save" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="96dp"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/advise_sos" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="327dp"
+        android:layout_marginBottom="9dp"
+        android:text="Server:"
+        app:layout_constraintBottom_toTopOf="@+id/server_url"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="24dp"
+        android:text="save URL"
+        app:layout_constraintBottom_toTopOf="@+id/advise_sos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/server_url"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button_record_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="96dp"
+        android:text="Start route"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_first"
+        app:layout_constraintTop_toBottomOf="@+id/advise_sos" />
+
+    <Button
+        android:id="@+id/button_files"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="93dp"
+        android:text="Files"
+        app:layout_constraintBottom_toTopOf="@+id/advise_sos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_save"
+        app:layout_constraintTop_toBottomOf="@+id/server_url" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+
+####ROAD MAP###########
+Some are ez more are just in mind
+#######################
+
+Android apk - should have a config for token?
+
+#Frontend
+Import/export tracked data features, etc
+
+#Systems
+Dockerize server and frontend for easy home use
