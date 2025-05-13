@@ -1,0 +1,44 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.538189874961972,
+                    42.891447097063065
+                ]
+            },
+            "properties": {
+                "deviceID": "db5ea700f78761b7"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.539191847667098,
+                    42.89193936623633
+                ]
+            },
+            "properties": {
+                "deviceID": "db5ea700f78761b7"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.53939276188612,
+                    42.89191388525069
+                ]
+            },
+            "properties": {
+                "deviceID": "db5ea700f78761b7"
+            }
+        }
+    ]
+}
